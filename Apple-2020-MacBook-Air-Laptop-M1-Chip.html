@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======== -->
+    <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>GuardForte</title>
+    <script src="//code.jivosite.com/widget/H6jDqbCXBv" async></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="header__logo">
+            <img src="./public/logo.png" alt="website logo" class="logo">
+        </a>
+        <div class="nav__wrapper" id="navWrapper">
+            <nav class="header__nav-menu">
+                <a href="Products.html" class="header__link currentlyActive" id="headerLink">Products</a>
+                <!-- <a href="Cart.html" class="header__link cart__wrapper" id="headerLink">
+                    <i class="bi bi-cart3 cart__icon" title="cart"></i>
+                    Cart
+                    <div class="cart__num" id="cartNum">
+                        0
+                    </div>
+                </a> -->
+                <a href="#Related-Products" class="header__link" id="headerLink">Related products</a>
+                <a href="#Contact-Us" class="header__link" id="headerLink">Contact Us</a>
+            </nav>
+            <div class="header__btn-wrapper">
+                <a href="User-auth.html" class="user__auth">
+                    Sign In
+                </a>
+                <a href="Products.html" class="header__btn">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="top__intro-navigation-section">
+            <a href="Products.html" class="top__intro-a">Products</a>
+            <i class="bi bi-chevron-right top__intro-icon"></i>
+            <p class="top__intro-p">Secure laptops</p>
+            <i class="bi bi-chevron-right top__intro-icon"></i>
+            <p class="current__page">Apple 2020 Macbook Air</p>
+        </div>
+
+        <section class="main__device-info-section">
+            <div class="main__device-image-container">
+                <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image1.jpg" alt="" class="visible__image">
+                <div class="main__device-wrapper">
+                    <div class="device-image main__image">
+                        <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image1.jpg" alt="">
+                    </div>
+
+                    <div class="device-image">
+                        <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image2.jpg" alt="">
+                    </div>
+
+                    <div class="device-image">
+                        <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image3.jpg" alt="" class="resize">
+                    </div>
+
+                    <div class="device-image">
+                        <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image4.jpg" alt="" class="resize">
+                    </div>
+
+                    <div class="device-image">
+                        <img src="./Apple-2020-MacBook-Air-images/Apple-2020-MacBook-Air-image6.jpg" alt="" class="resize">
+                    </div>
+                </div>
+            </div>
+            <div class="main__device-desc-wrapper">
+                <p class="main__device-name">
+                    Apple 2020 MacBook Air Laptop M1 Chip, 13” Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD
+                    Camera, Touch ID. Works with iPhone/iPad; Space Gray
+                </p>
+                <div class="main__device-price-wrapper">
+                    <div class="main__device-current-wrapper">
+                        <p class="main__device-current-price">$670</p>
+                        <p class="cents">99</p>
+                    </div>
+                    <div class="main__device-old-wrapper">
+                        <p class="main__device-old-price">$695</p>
+                        <p class="cents cents2">24</p>
+                    </div>
+                </div>
+                <div class="select__color-wrapper">
+                    <p class="color__text">Color:</p>
+                    <div class="colors">
+                        <div class="color__bg">
+                            <div class="space__gray"></div>
+                        </div>
+                        <div class="color__bg">
+                            <div class="gold"></div>
+                        </div>
+                        <div class="color__bg">
+                            <div class="silver"></div>
+                        </div>
+                        <div class="color__bg">
+                            <div class="black"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="memory__wrapper">
+                    <p>128GB</p>
+                    <p>256GB</p>
+                    <p>512GB</p>
+                    <p>1TB</p>
+                </div>
+                <div class="device__detail-wrapper">
+                    <div class="device__detail detail-1">
+                        <i class="bi bi-laptop"></i>
+                        <div class="device__detail-text">
+                            <p>Screen size</p>
+                            <p>13.3 Inches</p>
+                        </div>
+                    </div>
+                    <div class="device__detail detail-2">
+                        <i class="bi bi-motherboard"></i>
+                        <div class="device__detail-text">
+                            <p>System</p>
+                            <p>Mac OS</p>
+                        </div>
+                    </div>
+                    <div class="device__detail detail-3">
+                        <i class="bi bi-cpu"></i>
+                        <div class="device__detail-text">
+                            <p>Number of cores</p>
+                            <p>8</p>
+                        </div>
+                    </div>
+                    <div class="device__detail detail-4">
+                        <i class="bi bi-battery-half"></i>
+                        <div class="device__detail-text">
+                            <p>Battery capacity</p>
+                            <p>18 hours</p>
+                        </div>
+                    </div>
+                    <div class="device__detail detail-5">
+                        <i class="bi bi-paint-bucket"></i>
+                        <div class="device__detail-text">
+                            <p>Graphics card</p>
+                            <p>Integrated</p>
+                        </div>
+                    </div>
+                    <div class="device__detail detail-6">
+                        <i class="bi bi-lightning"></i>
+                        <div class="device__detail-text">
+                            <p>Special feature</p>
+                            <p>Backlit keyboard</p>
+                        </div>
+                    </div>
+                </div>
+                <p class="device__detail-mini-desc">
+                    Powerful Performance - Take on everything from professional-quality editing to action-packed gaming with ease. The Apple
+                    M1 chip with an 8-core CPU delivers faster performance than the previous generation while using way less power.
+                </p>
+                <div class="main__device-btn-wrapper">
+                    <!-- <button type="button" class="main__device-add-to-cart-btn">Add to cart</button> -->
+                    <button type="button" class="main__device-buy-now-btn">Buy now</button>
+                </div>
+                <div class="main__device-info">
+                    <div class="delivery__info">
+                        <i class="bi bi-truck"></i>
+                        <div>
+                            <p>Free Delivery</p>
+                            <p>2-4 days</p>
+                        </div>
+                    </div>
+                    <div class="stock__info">
+                        <i class="bi bi-shop"></i>
+                        <div>
+                            <p>In Stock</p>
+                            <p>Today</p>
+                        </div>
+                    </div>
+                    <div class="guarantee__info">
+                        <i class="bi bi-patch-check"></i>
+                        <div>
+                            <p>Guarantee</p>
+                            <p>1 year</p>
+                        </div>
+                    </div>
+                    <div class="support__info">
+                        <i class="bi bi-person-gear"></i>
+                        <div>
+                            <p>Tech Support</p>
+                            <p>6 months</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main__device-details-section">
+            <div class="main__device-details-wrapper">
+                <p class="main__device-details-title">Description</p>
+                <p class="main__device-details-description-content">
+                    All-Day Battery Life – Go longer than ever with up to 18 hours of battery life.
+                    Powerful Performance – Take on everything from professional-quality editing to action-packed gaming with ease. The Apple
+                    M1 chip with an 8-core CPU delivers up to 3.5x faster performance than the previous generation while using way less
+                    power.
+                    Superfast Memory – 8GB of unified memory makes your entire system speedy and responsive. That way it can support tasks
+                    like memory-hogging multitab browsing and opening a huge graphic file quickly and easily.
+                    Stunning Display – With a 13.3 inch Retina display, images come alive with new levels of realism. Text is sharp and
+                    clear, and colors are more vibrant.
+                    Why Mac – Easy to learn. Easy to set up. Astoundingly powerful. Intuitive. Packed with apps to use right out of the box.
+                </p>
+                <div class="main__device-details-info-wrapper">
+                    <div class="details__info details__info1">
+                        <p>Brand</p>
+                        <p>Apple</p>
+                    </div>
+                    <div class="details__info details__info2">
+                        <p>Model Name</p>
+                        <p>MacBook Air</p>
+                    </div>
+                    <div class="details__info details__info2-3">
+                        <p>GuardForte Security Suite</p>
+                        <p>Preinstalled</p>
+                    </div>
+                    <div class="details__info details__info3">
+                        <p>Screen Size</p>
+                        <p>13.3 Inches</p>
+                    </div>
+                    <div class="details__info details__info4">
+                        <p>Color</p>
+                        <p>Space Gray</p>
+                    </div>
+                    <div class="details__info details__info5">
+                        <p>Hard Disk Memory</p>
+                        <p>256 GB</p>
+                    </div>
+                    <div class="details__info details__info6">
+                        <p>Ram Memory Size</p>
+                        <p>8 GB</p>
+                    </div>
+                    <div class="details__info details__info7">
+                        <p>Operating System</p>
+                        <p>Mac OS</p>
+                    </div>
+                    <div class="details__info details__info8">
+                        <p>Special Feature</p>
+                        <p>Backlit Keyboard</p>
+                    </div>
+                    <div class="details__info details__info9">
+                        <p>Graphics Card</p>
+                        <p>Integrated</p>
+                    </div>
+                </div>
+                <!-- <div class="view__more-wrapper">
+                    <p>View More</p>
+                    <i class="bi bi-chevron-down"></i>
+                </div> -->
+            </div>
+        </section>
+
+        <section class="main__device-reviews-section">
+            <div class="main__device-reviews-top-wrapper">
+                <p class="main__device-reviews-top-wrapper-title">Reviews</p>
+                <div class="main__device-reviews-top-overall-rating-wrapper">
+                    <div class="main__device-overall-rating-box">
+                        <div class="main__device-overall-text-wrapper">
+                            <p>4.5</p>
+                            <p>of 175 reviews</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </div>
+                    <div class="main__device-overall-levels-container">
+                        <div class="main__device-overall-levels-wrapper">
+                            <p>Excellent</p>
+                            <div class="levels__wrapper">
+                                <div class="levels__child-first"></div>
+                            </div>
+                            <p>100</p>
+                        </div>
+                        <div class="main__device-overall-levels-wrapper">
+                            <p>Good</p>
+                            <div class="levels__wrapper">
+                                <div class="levels__child-second"></div>
+                            </div>
+                            <p>50</p>
+                        </div>
+                        <div class="main__device-overall-levels-wrapper">
+                            <p>Average</p>
+                            <div class="levels__wrapper">
+                                <div class="levels__child-third"></div>
+                            </div>
+                            <p>15</p>
+                        </div>
+                        <div class="main__device-overall-levels-wrapper">
+                            <p>Below Average</p>
+                            <div class="levels__wrapper">
+                                <div class="levels__child-fourth"></div>
+                            </div>
+                            <p>7</p>
+                        </div>
+                        <div class="main__device-overall-levels-wrapper">
+                            <p>Poor</p>
+                            <div class="levels__wrapper">
+                                <div class="levels__child-fifth"></div>
+                            </div>
+                            <p>3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment__container">
+                    <div class="comment__wrapper">
+                        <input type="text" class="comment__wrapper-input" placeholder="Leave Comment">
+                        <button type="button" class="comment__wrapper-btn">Submit</button>
+                    </div>
+                    <div class="submitted__comment-message">
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Your comment was submitted!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main__device-reviews-bottom-wrapper">
+                <div class="main__device-reviews-bottom-card bottom__card1">
+                    <div class="main__device-reviews-bottom-card-profile-image profile__image1">
+                        <p>GC</p>
+                    </div>
+                    <div class="main__device-reviews-bottom-card-profile">
+                        <div class="main__device-reviews-bottom-card-profile-info">
+                            <p>Grace Carey</p>
+                            <p>23 December, 2023</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="main__device-reviews-bottom-card-text">
+                            I was worried at first and was kind of skeptical about the Bitcoin payment method and because I've always wanted an apple laptop that has top notch security, never had one, so this was my
+                            first time ordering one. After I ordered one, it turns out GuardForte did an amazing job and they handled my laptop with
+                            care and also gave me more security tips, I was scared that my laptop was going to come damaged, however I took the risk
+                            and I am so happy I did! My apple laptop looks beautiful and it works perfectly. For those of you asking I ordered a new
+                            one. In conclusion I am happy
+                            with my product and definitely will look forward to ordering more through GuardForte sometime in the future.👍
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__device-reviews-bottom-card bottom__card2">
+                    <div class="main__device-reviews-bottom-card-profile-image profile__image2">
+                        <p>RR</p>
+                    </div>
+                    <div class="main__device-reviews-bottom-card-profile">
+                        <div class="main__device-reviews-bottom-card-profile-info">
+                            <p>Ronald Richards</p>
+                            <p>18 December, 2023</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="main__device-reviews-bottom-card-text">
+                            What a perfect computer! My wife has an older 13 inch Mac, and this is a great display of Apple quality over a ten-year
+                            period as to the advancement and expectations being easily met. So lightweight and compact.....hard to believe this
+                            would be a fully functioning computer. it looks like a toy...but looks are deceiving for sure!
+                            You get what you pay for.....Y E S, indeed!
+                            It does everything we had expected and more!
+                            <br>
+                            <br>
+                            GuardForte's security software, privacy, etc. and more are easily atop of all others. H/P is a very distant second place.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__device-reviews-bottom-card bottom__card3">
+                    <div class="main__device-reviews-bottom-card-profile-image profile__image3">
+                        <p>DK</p>
+                    </div>
+                    <div class="main__device-reviews-bottom-card-profile">
+                        <div class="main__device-reviews-bottom-card-profile-info">
+                            <p>Darcy King</p>
+                            <p>17 December, 2023</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="main__device-reviews-bottom-card-text">
+                            I dislike Apple products but I found myself in need of one, the laptop has proved useful and oddly enough I do not
+                            regret my purchase. It is as fast and reliable as I’ve heard and pleasantly surprised with how hard it can push!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__device-reviews-bottom-card bottom__card4">
+                    <div class="main__device-reviews-bottom-card-profile-image profile__image4">
+                        <p>LC</p>
+                    </div>
+                    <div class="main__device-reviews-bottom-card-profile">
+                        <div class="main__device-reviews-bottom-card-profile-info">
+                            <p>Larry Cobalt</p>
+                            <p>9 December, 2023</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <p class="main__device-reviews-bottom-card-text">
+                            This is a Christmas present for my daughter who will be going to college soon. Crossing my fingers and toes this item
+                            exceeds her expectations. From what I seen and heard it looks great and the GuardForte security preinstalled software is the best money can buy. will update review with how it works sometime after Christmas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="main__device-reviews-bottom-card bottom__card5">
+                    <div class="fade__overlay"></div>
+                    <div class="main__device-reviews-bottom-card-profile-image profile__image5">
+                        <p>JM</p>
+                    </div>
+                    <div class="main__device-reviews-bottom-card-profile">
+                        <div class="main__device-reviews-bottom-card-profile-info">
+                            <p>John Malcom</p>
+                            <p>20 November, 2023</p>
+                        </div>
+                        <div class="main__device-overall-stars-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="main__device-reviews-bottom-card-text">
+                            There isn’t anything I dislike about this MacBook, my sister had one before and I use to use hers. I’ll give this 10
+                            stars if I can, I always wanted a Macbook of my own. Speed is great no issues no dents, package was also delivered great plus the amazing GuardForte security software suite preinstalled in it.
+                            Battery life is all day, I got the space gray color and the screen is the perfect size. Using this for school starting January but also for daily use.
+                        </p>
+                    </div>
+                </div>
+                <div class="view__more-wrapper" id="startButton">
+                    <p>View More</p>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div id="loader" class="loader"></div>
+                <p class="error__occurred">Network error, please try again</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button type="button" class="backToTop">
+            Back to top
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <div class="footer__items-container">
+            <div class="footer__item1">
+                <!-- <img src="./public/logo.png" alt="" class="footer__logo"> -->
+                <div class="footer__item-text">
+                    Empowering Your Digital Defense. Our mission is to provide robust cybersecurity solutions, ensuring a secure online
+                    experience. Trust GuardForte for cutting-edge protection against hacking, spoofing, and malware. Shield your digital
+                    world with confidence. Your safety is our priority.
+                </div>
+            </div>
+            <div class="footer__item item2">
+                <p class="footer__item-title">Our Services</p>
+                <a href="index.html" class="footer__item-link">Data Security</a>
+                <a href="index.html" class="footer__item-link">Website Security</a>
+                <a href="index.html" class="footer__item-link">Document Security</a>
+                <a href="index.html" class="footer__item-link">Database Security</a>
+            </div>
+            <div class="footer__item">
+                <p class="footer__item-title">Page</p>
+                <a href="index.html" class="footer__item-link">About</a>
+                <a href="index.html" class="footer__item-link">Services</a>
+                <a href="Products.html" class="footer__item-link">Products</a>
+                <a href="#FAQ" class="footer__item-link">FAQ</a>
+            </div>
+            <div class="footer__item" id="Contact-Us">
+                <p class="footer__item-title">Contact Us</p>
+                <!-- <a href="" class="footer__item-link footer__item-phone">
+                    <i class="bi bi-telephone"></i>
+                    +1 (308) 434-0871
+                </a> -->
+                <a href="mailto:support.guardforte@protonmail.com" class="footer__item-link footer__item-email">
+                    <i class="bi bi-envelope"></i>
+                    support.guardforte@protonmail.com
+                </a>
+                <div class="footer__item-address">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>1601 Wewatta Street Suite 400 Denver, CO 80202 United States</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <p class="footer__item-title">Links</p>
+                <a href="" class="footer__item-link">Term Of Use</a>
+                <a href="" class="footer__item-link">Privacy Policy</a>
+            </div>
+        </div>
+        <hr>
+        <div class="social__links">
+            <a href="https://facebook.com/GuardForte" class="facebook">
+                <i class="fa-brands fa-facebook-f facebook__icon"></i>
+            </a>
+            <a href="https://twitter.com/GuardForte" class="twitter">
+                <i class="fa-brands fa-twitter twitter__icon"></i>
+            </a>
+            <a href="https://instagram.com/GuardForte" class="instagram">
+                <i class="fa-brands fa-instagram instagram__icon"></i>
+            </a>
+        </div>
+        <div class="secure__checkout">
+            <div class="checkout__text-wrapper">
+                <i class="bi bi-lock-fill"></i>
+                <p class="checkout__text">Secure checkout</p>
+            </div>
+            <div class="logos__container">
+                <!-- <img src="./public/secure-payment-logo.png" alt="" class="secure__payment-logo"> -->
+                <!-- <img src="./public/google-pay-logo.png" alt="" class="google-pay__logo"> -->
+                <img src="./public/apple-pay-logo.png" alt="" class="apple-pay__logo">
+                <img src="./public/visa-logo.png" alt="" class="visa__logo" title="Visa">
+                <img src="./public/mastercard-logo.png" alt="" class="mastercard__logo" title="Mastercard">
+                <img src="./public/paypal-logo.png" alt="" class="paypal__logo" title="PayPal">
+                <img src="./public/bitcoin-logo.png" alt="" class="bitcoin__logo" title="Bitcoin">
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="main.js"></script>
+    <script src="apple-2020-mackbook.js"></script>
+</body>
+</html>

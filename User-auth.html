@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======== -->
+    <link rel="shortcut icon" href="./public/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>GuardForte | User Authentication</title>
+    <script src="//code.jivosite.com/widget/H6jDqbCXBv" async></script>
+</head>
+<body>
+
+    <!-- <header>
+        <a href="index.html" class="header__logo">
+            <img src="./public/logo.png" alt="website logo" class="logo">
+        </a>
+        <div class="nav__wrapper" id="navWrapper">
+            <nav class="header__nav-menu">
+                <a href="index.html" class="header__link" id="headerLink">About</a>
+                <a href="index.html" class="header__link" id="headerLink">Services</a>
+                <a href="Products.html" class="header__link" id="headerLink">Products</a>
+                <a href="index.html" class="header__link" id="headerLink">FAQ</a>
+                <a href="Contact-Us.html" class="header__link" id="headerLink">Contact Us</a>
+            </nav>
+            <div class="header__btn-wrapper">
+                <a href="User-auth.html" class="user__auth currentlyActive" id="headerLink">
+                    Sign In
+                </a>
+                <a href="Products.html" class="header__btn">
+                    Get Started
+                </a>
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header> -->
+
+    <main>
+        <div class="empty-div">
+            <a href="index.html" class="homepage__link">
+                <i class="bi bi-arrow-left"></i>
+                Back home
+            </a>
+        </div>
+
+        <section class="user__auth-section">
+            <div class="user__auth-intro-wrapper">
+                <img src="./public/reg-login-image2.png" alt="">
+                <p class="user__auth-intro-heading">Welcome!</p>
+                <p class="user__auth-intro-text">
+                    Register an account with GuardForte OR sign in to an existing one to access your order history, manage your profile, and enjoy a personalized experience
+                    with our cybersecurity solutions.
+                </p>
+            </div>
+            <div class="user__auth-form-wrapper">
+                <div class="user-auth-tabs-btn-wrapper">
+                    <button id="section1Btn" class="user-auth-tablinks activeNow" onclick="openSection(event, 'user-auth-section1')">Sign In</button>
+                    <button id="section2Btn" class="user-auth-tablinks" onclick="openSection(event, 'user-auth-section2')">Register</button>
+                </div>
+
+                <div id="user-auth-section1" class="user-auth-tab-content showingNow">
+                    <p class="user__auth-form-heading">Sign In</p>
+                    <div class="user__auth-form-content-wrapper">
+                        <input type="email" placeholder="Email" required>
+                        <div class="user__auth-form-password-wrapper">
+                            <input type="password" placeholder="Password" id="passwordInputField" required>
+                            <p class="userAuthPasswdShowIcon" id="userAuthPasswdShowIcon" onclick="signinshowPassword()">Show</p>
+                        </div>
+                    </div>
+                    <div class="user__auth-form-passwd-remember">
+                        <div>
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me
+                        </div>
+                        <p class="user__auth-form-forgot-passwd">Forgot Password</p>
+                    </div>
+                    <button class="user__auth-form-submit-btn" id="signinBtn" onclick="signIn()">Sign In</button>
+                    <p class="sign-in__error-msg" id="sign-in__error-msg">Invalid email or password</p>
+                    <p class="user__auth-form-login-alternative">or sign in with</p>
+                    <div class="user__auth-form-login-alternative-logos">
+                        <a href="">
+                            <img src="./public/google-g-image.png" alt="">
+                        </a>
+
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f user__auth-form-login-facebook-alternative"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div id="user-auth-section2" class="user-auth-tab-content">
+                    <p class="user__auth-form-heading">Register</p>
+                    <div class="user__auth-register-input-wrapper">
+                        <input type="text" class="user-auth-section2-input" placeholder="First name" required>
+                        <input type="text" class="user-auth-section2-input" placeholder="Last name" required>
+                    </div>
+                    <div class="user__auth-register-email-phone-input-wrapper">
+                        <input type="email" class="user-auth-section2-input" id="regEmailInputField" placeholder="Email" required>
+                        <input type="tel"  placeholder="Phone" class="user-auth-section2-input" required>
+                    </div>
+                    
+                    <div class="user__auth-form-password-wrapper">
+                        <input type="password" placeholder="Password" class="user__auth-register-password-input user-auth-section2-input" id="registerPasswordInput" required>
+                        <p class="userAuthPasswdShowIcon" id="registerPasswordShowIcon" onclick="registerShowPassword()">Show</p>
+                    </div>
+
+                    <div class="user__auth-form-password-wrapper">
+                        <input type="password" placeholder="Confirm Password" class="user__auth-register-confirm-password-input user-auth-section2-input" id="registerShowConfirmPasswordInput" oninput="checkPasswordMatch()" required>
+                        <p class="userAuthPasswdShowIcon" id="registerShowConfirmPasswordIcon" onclick="registerShowConfirmPassword()">Show</p>
+                        <p class="registerShowConfirmPasswordInputErrorMsg">Passwords do not match</p>
+                    </div>
+
+                    <div class="user__auth-register-terms-checkbox-wrapper">
+                        <input type="checkbox" id="terms-policy" required>
+                        <label for="terms-policy">I agree to the <a href="">terms</a> and <a href="">Privacy Policy</a></label>
+                    </div>
+                    <button class="user__auth-form-submit-btn" id="registrationBtn" onclick="registerSuccessMsgModalOpen()">Register</button>
+                    <p class="registrationBtnErrorMsg">Some or all fields are empty</p>
+                    <p class="user__auth-form-login-alternative">or register with</p>
+                    <div class="user__auth-form-login-alternative-logos">
+                        <a href="">
+                            <img src="./public/google-g-image.png" alt="">
+                        </a>
+                    
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f user__auth-form-login-facebook-alternative"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="registrationMessageOverlay"></div>
+            <div class="registrationMessageModalContainer">
+                <div class="registrationMessageModalContent">
+                    <span class="registrationMessageModalContentClose" onclick="registrationSuccessMsgModalClose()">&times;</span>
+                    <div class="mark">
+                        <svg viewBox="-175 -4 400 70">
+                            <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                            <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                        </svg>
+                    </div>
+                    <p class="registrationMessageModalContentTitle">Registration Successful!</p>
+                    <p class="registrationMessageModalContentBody">Your account with GuardForte has been created. For security measures, we are mandated to review your account before activating it. An email confirmation will be sent with your login details within 24 hours.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <button type="button" class="backToTop">
+            Back to top
+            <i class="bi bi-arrow-up"></i>
+        </button>
+        <div class="footer__items-container">
+            <div class="footer__item1">
+                <!-- <img src="./public/logo.png" alt="" class="footer__logo"> -->
+                <div class="footer__item-text">
+                    Empowering Your Digital Defense. Our mission is to provide robust cybersecurity solutions, ensuring a secure online
+                    experience. Trust GuardForte for cutting-edge protection against hacking, spoofing, and malware. Shield your digital
+                    world with confidence. Your safety is our priority.
+                </div>
+            </div>
+            <div class="footer__item item2">
+                <p class="footer__item-title">Our Services</p>
+                <a href="#Services" class="footer__item-link">Data Security</a>
+                <a href="#Services" class="footer__item-link">Website Security</a>
+                <a href="#Services" class="footer__item-link">Document Security</a>
+                <a href="#Services" class="footer__item-link">Database Security</a>
+            </div>
+            <div class="footer__item">
+                <p class="footer__item-title">Page</p>
+                <a href="index.html" class="footer__item-link">About</a>
+                <a href="index.html" class="footer__item-link">Services</a>
+                <a href="Products.html" class="footer__item-link">Products</a>
+                <a href="index.html" class="footer__item-link">FAQ</a>
+            </div>
+            <div class="footer__item">
+                <p class="footer__item-title">Contact Us</p>
+                <!-- <a href="" class="footer__item-link footer__item-phone">
+                    <i class="bi bi-telephone"></i>
+                    +1 (308) 434-0871
+                </a> -->
+                <a href="mailto:support.guardforte@protonmail.com" class="footer__item-link footer__item-email">
+                    <i class="bi bi-envelope"></i>
+                    support.guardforte@protonmail.com
+                </a>
+                <div class="footer__item-address">
+                    <i class="bi bi-geo-alt"></i>
+                    <p>1601 Wewatta Street Suite 400 Denver, CO 80202 United States</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <p class="footer__item-title">Links</p>
+                <a href="" class="footer__item-link">Term Of Use</a>
+                <a href="" class="footer__item-link">Privacy Policy</a>
+            </div>
+        </div>
+        <hr>
+        <div class="social__links">
+            <a href="https://facebook.com/GuardForte" class="facebook">
+                <i class="fa-brands fa-facebook-f facebook__icon"></i>
+            </a>
+            <a href="https://twitter.com/GuardForte" class="twitter">
+                <i class="fa-brands fa-twitter twitter__icon"></i>
+            </a>
+            <a href="https://instagram.com/GuardForte" class="instagram">
+                <i class="fa-brands fa-instagram instagram__icon"></i>
+            </a>
+        </div>
+        <div class="secure__checkout">
+            <!-- <div class="checkout__text-wrapper">
+                <i class="bi bi-lock-fill"></i>
+                <p class="checkout__text">Secure checkout</p>
+            </div> -->
+            <div class="logos__container">
+                <!-- <img src="./public/secure-payment-logo.png" alt="" class="secure__payment-logo"> -->
+                <!-- <img src="./public/google-pay-logo.png" alt="" class="google-pay__logo"> -->
+                <img src="./public/apple-pay-logo.png" alt="" class="apple-pay__logo">
+                <img src="./public/visa-logo.png" alt="" class="visa__logo" title="Visa">
+                <img src="./public/mastercard-logo.png" alt="" class="mastercard__logo" title="Mastercard">
+                <img src="./public/paypal-logo.png" alt="" class="paypal__logo" title="PayPal">
+                <img src="./public/bitcoin-logo.png" alt="" class="bitcoin__logo" title="Bitcoin">
+            </div>
+        </div>
+    </footer>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
