@@ -3825,3 +3825,20 @@ footer {
     font-size: clamp(0.91rem, 0.9030rem + 0.0300vw, 0.93rem);
     padding: .7rem 1.3rem;
 } */
+
+.privacy__policy-section,
+.terms__of-use-section {
+    padding: 4rem var(--general-padding-l-r);
+}
+
+.privacy__policy-section p,
+.privacy__policy-section ul {
+    color: #6e6e6e;
+    font-size: clamp(0.91rem, 0.9030rem + 0.0300vw, 0.93rem);
+}
+
+.terms__of-use-section p,
+.terms__of-use-section ul {
+    color: #6e6e6e;
+    font-size: clamp(0.91rem, 0.9030rem + 0.0300vw, 0.93rem);
+}
